@@ -6,7 +6,7 @@ services:
     actuator:
       status: 2
       health: /?X-Plex-Token=5FSp_YxUxs3SkayR7sYV
-      parseStatus: /(MediaContainer).*(Directory)/
+      parseStatus: /(MediaContainer)/
     start: start
     stop: stop
     restart: restart
