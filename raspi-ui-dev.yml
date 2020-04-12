@@ -1,17 +1,12 @@
-{
-  "services": {
-    "Plex Media Server": {
-      "name": "Plex Media Server",
-      "uri": "192.168.0.254",
-      "port": "32400",
-      "actuator": {
-        "status": 2,
-        "health": "/?X-Plex-Token=5FSp_YxUxs3SkayR7sYV",
-        "parseStatus": "/(MediaContainer).*(Directory)/"
-      },
-      "start": "",
-      "stop": "",
-      "restart": ""
-    }
-  }
-}
+services:
+  "Plex Media Server":
+    name: Plex Media Server
+    uri: 192.168.0.254
+    port: 32400
+    actuator:
+      status: 2
+      health: /?X-Plex-Token=5FSp_YxUxs3SkayR7sYV
+      parseStatus: /(MediaContainer).*(Directory)/
+    start: start
+    stop: stop
+    restart: restart
