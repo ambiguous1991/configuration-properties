@@ -3,7 +3,7 @@ services:
     name: Plex Media Server
     uri: 192.168.0.254
     port: 32400
-    icon: https://pngimage.net/wp-content/uploads/2018/06/plex-icon-png-5.png
+    icon: "https://pngimage.net/wp-content/uploads/2018/06/plex-icon-png-5.png"
     actuator:
       status: 2
       health: /?X-Plex-Token=5FSp_YxUxs3SkayR7sYV
@@ -15,11 +15,11 @@ services:
     name: Transmission
       uri: 192.168.0.254
       port: 9091
-      icon: https://icons.iconarchive.com/icons/fruityth1ng/stark/512/Transmission-icon.png
+      icon: "https://icons.iconarchive.com/icons/fruityth1ng/stark/512/Transmission-icon.png"
       actuator:
         status: 2
-        health: /
-        parseStatus: .+
+        health:
+        parseStatus: ".+"
       start: start
       stop: stop
       restart: restart
