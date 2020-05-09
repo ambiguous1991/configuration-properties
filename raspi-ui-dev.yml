@@ -13,13 +13,13 @@ services:
     restart: restart
   "Transmission":
     name: Transmission
-      uri: 192.168.0.254
-      port: 9091
-      icon: "https://icons.iconarchive.com/icons/fruityth1ng/stark/512/Transmission-icon.png"
-      actuator:
-        status: 2
-        health:
-        parseStatus: ".+"
-      start: start
-      stop: stop
-      restart: restart
+    uri: 192.168.0.254
+    port: 9091
+    icon: "https://icons.iconarchive.com/icons/fruityth1ng/stark/512/Transmission-icon.png"
+    actuator:
+      status: 2
+      health:
+      parseStatus: ".+"
+    start: start
+    stop: stop
+    restart: restart
