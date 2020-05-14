@@ -19,7 +19,7 @@ services:
     actuator:
       status: 2
       health:
-        command: sudo service transmission status
+        command: sudo service transmission-daemon status
       parseStatus: .+
     start: start
     stop: stop
