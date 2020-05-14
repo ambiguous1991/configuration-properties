@@ -19,6 +19,7 @@ services:
     actuator:
       status: 2
       health:
+        command: sudo service transmission status
       parseStatus: .+
     start: start
     stop: stop
