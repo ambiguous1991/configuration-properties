@@ -24,5 +24,6 @@ services:
     start: sudo service transmission-daemon start
     stop: sudo service transmission-daemon stop
     restart: sudo service transmission-daemon restart
-    actions:
-      route: torrent
+    featureRoute:
+      name: Search for torrents
+      route: /torrent
