@@ -11,8 +11,8 @@ services:
     start: sudo service plexmediaserver start
     stop: sudo service plexmediaserver stop
     restart: sudo service plexmediaserver restart
-  "Node.js Torrent Backend Service":
-    name: Node.js Torrent Backend Service
+  "Torrent Backend Service":
+    name: Torrent Backend Service
     uri: 192.168.0.254
     port: 3001
     actuator:
