@@ -11,6 +11,21 @@ services:
     start: sudo service plexmediaserver start
     stop: sudo service plexmediaserver stop
     restart: sudo service plexmediaserver restart
+  "Node.js Torrent Backend Service":
+    name: Node.js Torrent Backend Service
+    uri: 192.168.0.254
+    port: 3001
+    actuator:
+      status: 2
+      health:
+        command: sudo service torrent-backend status
+      parseStatus: '(Active: active \(running\))'
+    start: sudo service transmission-daemon start
+    stop: sudo service transmission-daemon stop
+    restart: sudo service transmission-daemon restart
+    featureRoute:
+      name: Torrent Client
+      route: /transmission
   "Transmission":
     name: Transmission
     uri: 192.168.0.254
