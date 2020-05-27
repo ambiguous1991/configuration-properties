@@ -26,6 +26,15 @@ services:
     featureRoute:
       name: Torrent Client
       route: /pi-tor
+    configuration:
+      directories:
+        - 'hd1'
+        - 'hd2'
+      categories:
+        - Movies
+        - TV
+        - Games
+        - Others
   "Transmission":
     name: Transmission
     uri: 192.168.0.254
