@@ -32,7 +32,7 @@ services:
         - 'hd2'
       categories:
         - Movies
-        - TV
+        - Series
         - Games
         - Others
   "Transmission":
