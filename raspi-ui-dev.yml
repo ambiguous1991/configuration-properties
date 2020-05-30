@@ -51,3 +51,16 @@ services:
     featureRoute:
       name: Search for torrents
       route: /torrent
+  Jenkins:
+    name: Jenkins
+    uri: 192.168.0.254
+    port: 9091
+    icon: https://d1q6f0aelx0por.cloudfront.net/product-logos/f5326186-8ae7-425c-a78d-7192dabf75be-jenkins.png
+    actuator:
+      status: 2
+      health:
+        command: sudo service jenkins status
+      parseStatus: '(Active: active \(running\))'
+    start: sudo service jenkins start
+    stop: sudo service jenkins stop
+    restart: sudo service jenkins restart
