@@ -39,7 +39,7 @@ services:
   Jenkins:
     name: Jenkins
     uri: 192.168.0.254
-    port: 9091
+    port: 8080
     icon: https://d1q6f0aelx0por.cloudfront.net/product-logos/f5326186-8ae7-425c-a78d-7192dabf75be-jenkins.png
     actuator:
       status: 2
