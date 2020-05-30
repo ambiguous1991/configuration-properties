@@ -15,6 +15,7 @@ services:
     name: Torrent Backend Service
     uri: 192.168.0.254
     port: 3001
+    icon: https://icons.iconarchive.com/icons/fruityth1ng/stark/512/Transmission-icon.png
     actuator:
       status: 2
       health:
@@ -35,22 +36,6 @@ services:
         - Series
         - Games
         - Others
-  "Transmission":
-    name: Transmission
-    uri: 192.168.0.254
-    port: 9091
-    icon: https://icons.iconarchive.com/icons/fruityth1ng/stark/512/Transmission-icon.png
-    actuator:
-      status: 2
-      health:
-        command: sudo service transmission-daemon status
-      parseStatus: '(Active: active \(running\))'
-    start: sudo service transmission-daemon start
-    stop: sudo service transmission-daemon stop
-    restart: sudo service transmission-daemon restart
-    featureRoute:
-      name: Search for torrents
-      route: /torrent
   Jenkins:
     name: Jenkins
     uri: 192.168.0.254
@@ -60,7 +45,7 @@ services:
       status: 2
       health:
         command: sudo service jenkins status
-      parseStatus: '(Active: active \(running\))'
+      parseStatus: '(Active: active \(exited\))'
     start: sudo service jenkins start
     stop: sudo service jenkins stop
     restart: sudo service jenkins restart
