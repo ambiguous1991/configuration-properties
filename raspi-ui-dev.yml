@@ -25,6 +25,8 @@ services:
     stop: sudo service transmission-daemon stop
     restart: sudo service transmission-daemon restart
     featureRoutes:
+      - name: Homepage
+        route: /
       - name: Torrent Client
         route: /torrent-client
       - name: Torrent Search
