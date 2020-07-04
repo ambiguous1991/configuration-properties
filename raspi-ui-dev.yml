@@ -26,9 +26,9 @@ services:
     restart: sudo service transmission-daemon restart
     featureRoutes:
       - name: Torrent Client
-        route: /pi-tor
+        route: /torrent-client
       - name: Torrent Search
-        route: /torrent
+        route: /torrent-search
     configuration:
       directories:
         - 'hd1'
