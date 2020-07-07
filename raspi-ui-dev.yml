@@ -54,3 +54,16 @@ services:
     start: sudo service jenkins start
     stop: sudo service jenkins stop
     restart: sudo service jenkins restart
+  "Docker Daemon":
+    name: Docker Daemon
+    uri: 192.168.0.254
+    port: 2375
+    icon: https://www.pngfind.com/pngs/m/255-2553250_icon-docker-notext-color-docker-icon-png-transparent.png
+    actuator:
+      status: 2
+      health:
+        command: sudo service docker status
+      parseStatus: '(Active: active \(running\))'
+    start: sudo service docker start
+    stop: sudo service docker stop
+    restart: sudo service docker restart
