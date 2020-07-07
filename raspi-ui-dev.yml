@@ -58,7 +58,7 @@ services:
     name: Docker Daemon
     uri: 192.168.0.254
     port: 2375
-    icon: https://www.pngfind.com/pngs/m/255-2553250_icon-docker-notext-color-docker-icon-png-transparent.png
+    icon: https://w7.pngwing.com/pngs/303/853/png-transparent-computer-icons-docker-font-thruster-icon-computer-network-text-logo.png
     actuator:
       status: 2
       health:
