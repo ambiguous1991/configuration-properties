@@ -18,9 +18,8 @@ services:
     icon: https://icons.iconarchive.com/icons/fruityth1ng/stark/512/Transmission-icon.png
     actuator:
       status: 2
-      health:
-        command: sudo service torrent-backend status
-      parseStatus: '(Active: active \(running\))'
+      health: http://192.168.0.254:3001/health
+      parseStatus: /(status).*(UP)/,
     start: sudo service transmission-daemon start
     stop: sudo service transmission-daemon stop
     restart: sudo service transmission-daemon restart
