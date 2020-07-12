@@ -19,7 +19,7 @@ services:
     actuator:
       status: 2
       health: '/health'
-      parseStatus: /{"status":"UP"}/
+      parseStatus: \{"status":"UP"\}
     start: sudo service transmission-daemon start
     stop: sudo service transmission-daemon stop
     restart: sudo service transmission-daemon restart
