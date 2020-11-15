@@ -34,7 +34,6 @@ services:
       directories:
         - 'hd1'
         - 'hd2'
-        - 'hd3'
       categories:
         - Movies
         - Series
